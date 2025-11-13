@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários SESI</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <h2>Exemplos de Formulário em HTML</h2>
+    <hr>
+    <h3>Exemplo 01</h3>
+    <!-- Form = A criar formulário  -->
+    <form id="exemplo01">
+        <!-- Input para colocar um campo para escrever
+        placeholder para ficar com opacidade -->
+        <input type="text" placeholder="Digite seu Nome" name="nome">
+        <input type="email" placeholder="Digite seu e-mail" name="email">
+        <input type="tel" placeholder="Digite seu telefone" name="celular">
+        <input type="password" placeholder="Digite uma Senha" name="senha">
+        <button type="submit">Cadastrar</button>
+    </form>
+    <hr>
+    <h3>Exemplo 02</h3>
+    <textarea id="exemplo02" rows="4" cols="100"></textarea>
+    <!-- Rows e cols são para um campo de texto -->
+    <hr>
+    <h3>Exmplo 03</h3>
+    <form id="exemplo03">
+        <!-- Fieldset para colocar linah no formulário(limitar) -->
+        <fieldset>
+            <legend>Formulário</legend>
+            <!-- O label é uma etiqueta -->
+            <label for="name">Nome:</label>
+            <input type="text" name="name"><br><br>
+            <label for="sex">Sexo:</label>
+            <input type="radio" name="sex" id="female" value="female">
+            <label for="female">Feminino</label>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">Masculino</label><br><br>
+            <label for="country">País:</label>
+            <!-- Fiz um select para ter as opções para selecionar -->
+            <select name="country" id="country">
+                <option>Brasil</option>
+                <option>Chile</option>
+                <option>Argentina</option>
+                <option>Coreia do Norte</option>
+                <option>Rússia</option>
+                <option>Alemanha</option>
+            </select><br><br>
+            <label for="message">Mensagem:</label><br>
+            <textarea name="message" id="message" cols="30" rows="4"></textarea><br><br>
+            <input type="checkbox" name="newsletter" id="newsletter">
+            <!-- Newsletter é igual a um "jornal"/ para enviar a notícia-->
+            <label for="newsletter">Assinar Newsletter</label><br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <hr>
+    <h3>Exemplo 04</h3>
+    <!-- Method=get (significa pegar uma informação
+     e direcionar para uma página) -->
+    <!-- Method=post (postar uma informação para algum lugar) -->
+    <form id="exemplo04" method="get" action="https://www.google.com/search" target="_blank">
+        <input type="text" name="q">
+        <input type="submit" value="Clique aqui para pesquisar">
+
+    </form>
+</body>
+
+</html>
