@@ -1,3 +1,17 @@
-body{
-    background-color: red;
+#exemplo02 {
+    /* resize deixa os quadrados do formulário fixo
+    (usuário não mexe nele/altera)  */
+    resize: none;
+    padding: 12px;
+    background-color: lightblue;
+    color: blue;
+}
+
+#exemplo03 fieldset {
+    border: purple;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 5px;
+    color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
