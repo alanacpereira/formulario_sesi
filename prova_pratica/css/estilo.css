@@ -1,0 +1,41 @@
+body {
+    background-image: url('goku.png');
+    background-color: indigo;
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+h2 {
+    font-family: cursive;
+    border-style: dotted;
+    border-radius: 10px;
+    color: goldenrod;
+    background-color: darkmagenta;
+    text-align: center;
+}
+
+
+
+ fieldset {
+    resize: none;
+    padding: 10px;
+    border: solid 5px gold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#dados fieldset {
+    resize: none;
+    padding: 10px;
+    border: solid 5px gold;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#dados legend {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
