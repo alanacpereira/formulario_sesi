@@ -1,109 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset='utf-8'>
+    <title>Formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
 </head>
 
 <body>
-    <!-- Começo com meu título -->
-    <h1>FORMULARIO SUPERAÇAIAJIN</h1>
-    <hr>
-
-    <!-- Inicio primeiramente meu formulario dos dados pessoais -->
-    <form id="dados">
+    <h1>FORMULARIO SUPER<strong>AÇAI</strong>AJIN</h1>
+    <form method="get" action="confirma.html">
         <fieldset>
-            <legend>Dados Pessoais</legend>
-            <label for="name">Nome:</label>
-            <label for="idade">Idade:</label>
-            <label for="tel">Telefone:</label>
-            <label for="endereco">Endereço:</label>
-            <label for="pais">Planeta de Origem</label>
-            <select name="pais" id="pais">
-                <option>Planeta Terra</option>
-                <option>Planeta Namek</option>
-                <option>Planeta Vegeta</option>
-                <option>Outros</option>
-            </select><br><br>
+            <legend>
+                Dados pessoais:
+            </legend>
+            <label>Nome:<p></p><input type="text" required></label>
+            <p></p>
+            <label>Idade:<p></p><input type="number" required></label>
+            <p></p>
+            <label>Telefone:<p></p><input type="number" required></label>
+            <p></p>
+            <label>Endereço:<p></p><input type="text" required></label>
+            <p></p>
+			<label>Planeta de Origem:
+			<br>
+			<br>
+                <select>
+                    <option>Planeta Terra</option>
+                    <option>Planeta Namek</option>
+                    <option>Planeta Vegeta</option>
+					<option>Outros</option>
+                </select>
+            </label>
         </fieldset>
-    </form>
-
-    <!-- Faço meu segundo quadro de formulario/ como opçoes  -->
-    <form id="dadosextras">
         <fieldset>
-            <legend>Dados Extras:</legend>
-            <label>Raça do Universo 7 preferida:</label>
-            <select name="raça" id="raça">
-                <option>Terráqueo</option>
-                <option>Sayain</option>
-                <option>Namekuseijin</option>
-                <option>Androide</option>
-                <option>Outros</option>
-                <label for="trab">Trabalho:</label>
-                <input type="radio" name="trab" id="trabalho" value="trabalho">
-                <label for="trabalho">Autonomo</label>
-                <label for="trabalho">Empregado CLT</label>
-                <input type="radio" name="clt" id="emprego" value="emprego">
-                <label for="trabalho">Empresário</label>
-                <input type="radio" name="patrão" id="empresário" value="empresário">
-                <label for="trabalho">Tipo GOKU</label>
-                <input type="radio" name="tipo" id="tipogoku" value="tipogoku">
-            </select><br><br>
+            <legend>
+                Dados extras:
+            </legend>
+            <label>Raça do Universo 7 preferida:
+                <select>
+                    <option>Terráqueo</option>
+                    <option>Sayajin</option>
+                    <option>Namekuseijin</option>
+					<option>Androide</option>
+					<option>Outros</option>
+                </select>
+            </label>
+            <br>
+            <br>
+            <label>Trabalho:
+                <input type="radio" name="cargo" value="1" checked>Autônomo
+                <input type="radio" name="cargo" value="2">Empregado CLT
+                <input type="radio" name="cargo" value="3">Empresário
+                <input type="radio" name="cargo" value="4">Tipo Goku
+            </label>
         </fieldset>
-    </form>
-
-    <!-- Segundo formulario para escolher as opções -->
-    <form>
         <fieldset>
-            <legend>Seu açaí é perfeito de que jeito?</legend>
-            <label for="opçoes">Puro</label>
-            <input type="checkbox" name="opçoes" id="puro" value="puro">
-            <label for="fruta">Com banana</label>
-            <input type="checkbox" name="fruta" id="banana" value="banana">
-            <label for="frutared">Com morango</label>
-            <input type="checkbox" name="frutared" id="morango" value="morango">
-            <label for="granola">Com granola</label>
-            <input type="checkbox" name="granolaopçao" id="granola" value="granola">
-            <label for="terra">Tem gosto de Terra</label>
-            <input type="checkbox" name="gosto" id="terra" value="terra">
+            <legend>
+                Seu açai é perfeito de que jeito?
+            </legend>
+            <input type="checkbox">Puro
+            <input type="checkbox">Com Banana
+            <input type="checkbox">Com Morango
+            <input type="checkbox">Com Granola
+            <input type="checkbox">Tem gosto de Terra
         </fieldset>
-    </form>
-
-    <!-- Terceiro formulario para escolher o tamanho-->
-    <form>
         <fieldset>
-            <legend>Qual é o tamanho preferido?</legend>
-            <label for="500t">500ml</label>
-            <input type="radio" name="500t" id="500t" value="500t">
-            <label for="300t">300ml</label>
-            <input type="radio" name="300t" id="300t" value="300t">
-            <label for="100t">100ml</label>
-            <input type="radio" name="100t" id="100t" value="100t">
-            <label for="casquinha">Com casquinha</label>
-            <input type="radio" name="casquinha" id="casquinha" value="casquinha">
-            <label for="gostterra">Qual parte do gosto de terra voce não entendeu?</label>
-            <input type="radio" name="gostoter" id="gostterra" value="gostterra">
+            <legend>
+                Qual o tamanho preferido?
+            </legend>
+            <input type="radio" name="tamanho" value="1" checked>500ml
+            <input type="radio" name="tamanho" value="2">300ml
+            <input type="radio" name="tamanho" value="3">100ml
+            <input type="radio" name="tamanho" value="4">Casquinha
+            <input type="radio" name="tamanho" value="5">Qual parte do gosto de terra voce nao entendeu?
         </fieldset>
-    </form>
-
-    <!-- Parte das observações -->
-    <form>
         <fieldset>
-            <legend id="obs">Observações:</legend>
-            <textarea id="exemplo02" rows="8" cols="195"></textarea>
-            <!-- Rows e cols são para um campo de texto -->
+            Observações:<br>
+            <textarea cols="195" rows="8" ></textarea>
         </fieldset>
+        <div>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </div>
     </form>
-
-    <!-- Vou agora colocar meus botões -->
-    <button id="envio">Enviar</button>
-    <button id="limpar">Limpar</button>
-
-    <!-- colocando minha imagem -->
-    <img src="imagens/goku.png" id="goku">
 </body>
 
 </html>
