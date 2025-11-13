@@ -7,6 +7,7 @@
     color: blue;
 }
 
+/* Estilize a parte do formulário do exemplo03 */
 #exemplo03 fieldset {
     border: purple;
     border-style: solid;
@@ -15,3 +16,89 @@
     color: purple;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/* Estilizei meu botão do formulário do ex.03 */
+#exemplo03 input,
+textarea,
+option {
+    color: blue;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    resize: none;
+}
+
+/* Estilizou os textos/escritas */
+h2,
+h3 {
+    color: darkred;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilizei as nossa linhas criadas */
+hr {
+    border: solid 10px darkred;
+    border-radius: 15px;
+}
+
+/* Estilizei meus quadrados do exemplo01 */
+#exemplo01 input {
+    padding: 12px;
+    background-color: lightblue;
+    color: blue;
+}
+
+/* Estilizei meu botão do exemplo01 */
+#exemplo01 button {
+    padding: 12px;
+    color: black;
+    background-color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    border: 5px solid darkorchid;
+    cursor: pointer;
+}
+
+/* Estilizei a parte do button do exemplo01 */
+#exemplo01 button {
+    padding: 12px;
+    color: black;
+    background-color: gold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 18px;
+    border: 5px solid darkorchid;
+}
+
+/* Estilizei a parte da pesquisa do exemplo04 */
+#exemplo04 input {
+    color: red;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+/* Coloquei o type entre[](pois no input tem mais de um comando
+para estilizar) então quando fazemos isso 
+estilizamos só o selecionado */
+#exemplo04 input[type=submit] {
+    border-radius: 15px;
+    background-color: black;
+}
+
+#exemplo05 legend {
+    font-size: 15px;
+    color: darkgreen;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#exemplo05 fieldset {
+    border: solid 5px darkgoldenrod;
+    font-size: 15px;
+    color: darkgreen;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
